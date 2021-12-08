@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.card {
+    height:150px;
+    width:350px;
+    background-color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:22px;
+    position:relative;
+    margin:30px;
+    margin-bottom:60px;
+    user-select: none;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:110px;
+}
+
+.card-question {
+    font-size:1.4em;
+    font-family: Roboto;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.card-answers {
+    font-size:1.3em;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+#active-circle {
+    height:16px;
+    width:16px;
+    border-radius:360px;
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    background-color:#C996CC;
+}
+
+#active-circle.visible{
+    visibility: visible;
+}
+
+#active-circle.hidden {
+    visibility: hidden;
+}

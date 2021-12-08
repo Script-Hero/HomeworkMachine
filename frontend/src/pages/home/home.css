@@ -1,0 +1,30 @@
+#page-container {
+}
+
+#header-container {
+    margin-top:3%;
+    text-align: center;
+}
+
+#topic-input {
+    border: none;
+    border-bottom: 2px solid white;
+    text-align: center;
+    width: 40%;
+    height: 10vh;
+    font-size:20px;
+    background: #1C0C5B;
+    color:white;
+}
+
+#topic-input:focus {
+    outline:none;
+}
+
+#topic-input::placeholder{
+    color:rgba(255, 255, 255, 0.74);
+}
+
+#inputs-container{
+    margin-top:7vh;
+}
