@@ -5,7 +5,10 @@ import eventlet
 eventlet.monkey_patch()
 
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins=["http://localhost:3000"], async_handlers=True)
+
+
+PORT = 3000
+socketio = SocketIO(app, cors_allowed_origins=["http://localhost:%d"%(PORT)], async_handlers=True)
 
 @app.route('/search', methods=['POST'])
 def search():
